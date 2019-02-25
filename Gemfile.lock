@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    clearance (2.0.0.alpha)
+    clearance (2.0.0.beta1)
       actionmailer (>= 4.2)
       activemodel (>= 4.2)
       activerecord (>= 4.2)
