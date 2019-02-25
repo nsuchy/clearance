@@ -5,10 +5,10 @@ require 'date'
 Gem::Specification.new do |s|
   s.add_dependency 'bcrypt'
   s.add_dependency 'email_validator', '~> 1.4'
-  s.add_dependency 'railties', '>= 3.1'
-  s.add_dependency 'activemodel', '>= 3.1'
-  s.add_dependency 'activerecord', '>= 3.1'
-  s.add_dependency 'actionmailer', '>= 3.1'
+  s.add_dependency 'railties', '>= 4.2'
+  s.add_dependency 'activemodel', '>= 4.2'
+  s.add_dependency 'activerecord', '>= 4.2'
+  s.add_dependency 'actionmailer', '>= 4.2'
   s.authors = [
     'Dan Croak',
     'Eugene Bolshakov',
