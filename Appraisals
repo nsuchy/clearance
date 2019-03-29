@@ -12,6 +12,7 @@ rails_versions.each do |version|
       gem "rails-controller-testing"
     end
     gem 'rspec-rails', '~> 3.1'
+    gem 'shoulda-matchers', '~> 4.0'
   end
 end
 
@@ -20,9 +21,14 @@ end
 appraise "rails_6.0" do
   gem "railties", "~> 6.0.0.beta"
   gem "rails-controller-testing"
+
+  # TODO - Switch to 4.0 gem or pre-release
   gem 'rspec-rails', github: "rspec/rspec-rails", branch: "4-0-dev"
   gem 'rspec-core', github: "rspec/rspec-core"
   gem 'rspec-mocks', github: "rspec/rspec-mocks"
   gem 'rspec-expectations', github: "rspec/rspec-expectations"
   gem 'rspec-support', github: "rspec/rspec-support"
+
+  # TODO - Once PR is merged, switch to master or new release
+  gem 'shoulda-matchers', github: "thoughtbot/shoulda-matchers", branch: "add-support-for-rails-6"
 end
